@@ -1,15 +1,9 @@
-import os
-import zipfile
-import random
 import tensorflow as tf
-from tensorflow.keras.optimizers import RMSprop
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
-from shutil import copyfile
-
-import numpy as np
 import pandas as pd
-from glob import glob
+import numpy as np
 import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
 
 data = pd.read_csv("../input/Data_Entry_2017.csv")
 
